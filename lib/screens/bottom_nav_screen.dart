@@ -1,5 +1,7 @@
 import 'package:flutter/material.dart';
+import 'package:flutter_covid_dashboard_ui/screens/info_screen.dart';
 import 'package:flutter_covid_dashboard_ui/screens/map_screen.dart';
+import 'package:flutter_covid_dashboard_ui/screens/news_screen.dart';
 import 'package:flutter_covid_dashboard_ui/screens/screens.dart';
 
 import '../config/palette.dart';
@@ -14,9 +16,8 @@ class _BottomNavScreenState extends State<BottomNavScreen> {
     HomeScreen(),
     StatsScreen(),
     MapScreen(),
-    Scaffold(),
-    Scaffold(),
-    Scaffold(),
+    NewsScreen(),
+    InfoPage(),
   ];
   int _currentIndex = 0;
 
@@ -35,7 +36,7 @@ class _BottomNavScreenState extends State<BottomNavScreen> {
         unselectedItemColor: Colors.grey,
         elevation: 0.0,
         
-        items: [Icons.home, Icons.insert_chart, Icons.location_on, Icons.info, Icons.event_note]
+        items: [Icons.home, Icons.insert_chart, Icons.location_on, Icons.event_note, Icons.info]
             .asMap()
             .map((key, value) => MapEntry(
                   key,

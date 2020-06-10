@@ -48,19 +48,19 @@ class CovidBarChart extends StatelessWidget {
                     getTitles: (double value) {
                       switch (value.toInt()) {
                         case 0:
-                          return 'May 24';
+                          return 'Juin 3';
                         case 1:
-                          return 'May 25';
+                          return 'Juin 4';
                         case 2:
-                          return 'May 26';
+                          return 'Juin 5';
                         case 3:
-                          return 'May 27';
+                          return 'Juin 6';
                         case 4:
-                          return 'May 28';
+                          return 'Juin 7';
                         case 5:
-                          return 'May 29';
+                          return 'Juin 8';
                         case 6:
-                          return 'May 30';
+                          return 'Juin 9';
                         default:
                           return '';
                       }
@@ -74,7 +74,7 @@ class CovidBarChart extends StatelessWidget {
                         if (value == 0) {
                           return '0';
                         } else if (value % 3 == 0) {
-                          return '${value ~/ 3 * 5}K';
+                          return '${value ~/ 3 * 10}';
                         }
                         return '';
                       }),
