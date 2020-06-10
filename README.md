@@ -1,3 +1,4 @@
-# Flutter COVID-19 Dashboard UI | Speed Code
+# Flutter COVID-19 Dashboard UI 
 
-[YouTube Video](https://youtu.be/krU-ASLb8lM)
+Stater code [YouTube Video](https://youtu.be/krU-ASLb8lM)
+
