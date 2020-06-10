@@ -1,6 +1,8 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_covid_dashboard_ui/screens/screens.dart';
 
+import '../config/palette.dart';
+
 class BottomNavScreen extends StatefulWidget {
   @override
   _BottomNavScreenState createState() => _BottomNavScreenState();
@@ -43,7 +45,7 @@ class _BottomNavScreenState extends State<BottomNavScreen> {
                       ),
                       decoration: BoxDecoration(
                         color: _currentIndex == key
-                            ? Colors.blue[600]
+                            ? Palette.primaryColor
                             : Colors.transparent,
                         borderRadius: BorderRadius.circular(20.0),
                       ),

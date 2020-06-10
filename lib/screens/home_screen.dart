@@ -10,7 +10,7 @@ class HomeScreen extends StatefulWidget {
 }
 
 class _HomeScreenState extends State<HomeScreen> {
-  String _country = 'USA';
+  String _country = 'MA';
 
   @override
   Widget build(BuildContext context) {
@@ -54,7 +54,7 @@ class _HomeScreenState extends State<HomeScreen> {
                   ),
                 ),
                 CountryDropdown(
-                  countries: ['CN', 'FR', 'IN', 'IT', 'UK', 'USA'],
+                  countries: ['CN', 'FR', 'IN', 'IT', 'UK', 'MA'],
                   country: _country,
                   onChanged: (val) => setState(() => _country = val),
                 ),
@@ -65,7 +65,7 @@ class _HomeScreenState extends State<HomeScreen> {
               crossAxisAlignment: CrossAxisAlignment.start,
               children: <Widget>[
                 Text(
-                  'Are you feeling sick?',
+                  'Vous vous sentez malade ?',
                   style: const TextStyle(
                     color: Colors.white,
                     fontSize: 22.0,
@@ -74,7 +74,7 @@ class _HomeScreenState extends State<HomeScreen> {
                 ),
                 SizedBox(height: screenHeight * 0.01),
                 Text(
-                  'If you feel sick with any COVID-19 symptoms, please call or text us immediately for help',
+                  'S\'il vous plaît, si vous vous sentez malade, et vous croyez avoir les symptômes du COVID-19. Veuillez nous appeler ou nous envoyer un message pour qu\'on puisse vous aider immediatement',
                   style: const TextStyle(
                     color: Colors.white70,
                     fontSize: 15.0,
@@ -99,7 +99,7 @@ class _HomeScreenState extends State<HomeScreen> {
                         color: Colors.white,
                       ),
                       label: Text(
-                        'Call Now',
+                        'Urgence',
                         style: Styles.buttonTextStyle,
                       ),
                       textColor: Colors.white,
@@ -119,7 +119,7 @@ class _HomeScreenState extends State<HomeScreen> {
                         color: Colors.white,
                       ),
                       label: Text(
-                        'Send SMS',
+                        'Message',
                         style: Styles.buttonTextStyle,
                       ),
                       textColor: Colors.white,
@@ -142,7 +142,7 @@ class _HomeScreenState extends State<HomeScreen> {
           crossAxisAlignment: CrossAxisAlignment.start,
           children: <Widget>[
             Text(
-              'Prevention Tips',
+              'Astuces préventives',
               style: const TextStyle(
                 fontSize: 22.0,
                 fontWeight: FontWeight.w600,
@@ -201,7 +201,7 @@ class _HomeScreenState extends State<HomeScreen> {
               crossAxisAlignment: CrossAxisAlignment.start,
               children: <Widget>[
                 Text(
-                  'Do your own test!',
+                  'Faire son propre test',
                   style: const TextStyle(
                     color: Colors.white,
                     fontSize: 18.0,
@@ -210,7 +210,7 @@ class _HomeScreenState extends State<HomeScreen> {
                 ),
                 SizedBox(height: screenHeight * 0.01),
                 Text(
-                  'Follow the instructions\nto do your own test.',
+                  'Suivre les instructions\npour faire son propre test.',
                   style: const TextStyle(
                     color: Colors.white,
                     fontSize: 16.0,
