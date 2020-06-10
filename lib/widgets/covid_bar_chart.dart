@@ -10,7 +10,7 @@ class CovidBarChart extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Container(
-      height: 350.0,
+      height: 380.0,
       decoration: BoxDecoration(
         color: Colors.white,
         borderRadius: BorderRadius.only(
@@ -24,7 +24,7 @@ class CovidBarChart extends StatelessWidget {
             padding: const EdgeInsets.all(20.0),
             alignment: Alignment.centerLeft,
             child: Text(
-              'Daily New Cases',
+              'Nouveaux cas quotidiens',
               style: const TextStyle(
                 fontSize: 22.0,
                 fontWeight: FontWeight.bold,

@@ -44,7 +44,7 @@ class _StatsScreenState extends State<StatsScreen> {
       padding: const EdgeInsets.all(20.0),
       sliver: SliverToBoxAdapter(
         child: Text(
-          'Statistics',
+          'Statistiques',
           style: const TextStyle(
             color: Colors.white,
             fontSize: 25.0,
@@ -76,8 +76,8 @@ class _StatsScreenState extends State<StatsScreen> {
             labelColor: Colors.black,
             unselectedLabelColor: Colors.white,
             tabs: <Widget>[
-              Text('My Country'),
-              Text('Global'),
+              Text('Mon Pays'),
+              Text('Monde'),
             ],
             onTap: (index) {},
           ),
@@ -99,8 +99,8 @@ class _StatsScreenState extends State<StatsScreen> {
             unselectedLabelColor: Colors.white60,
             tabs: <Widget>[
               Text('Total'),
-              Text('Today'),
-              Text('Yesterday'),
+              Text('Aujourd\'hui'),
+              Text('Hier'),
             ],
             onTap: (index) {},
           ),
